@@ -1,8 +1,7 @@
 # Projeto Prático B2
-
-Repositorio destinado a atividade avaliativa do segundo bimestre da disciplina de desenvolvimento web
-Professor responsável: Otavio Lube
-Trabalho escrito por: Guilherme Campo Soares
+- Repositorio destinado a atividade avaliativa do segundo bimestre da disciplina de Desenvolvimento Web
+- Trabalho realizado por: Guilherme Campo Soares.
+Professor responsável: Otavio Lube.
 
 ## Solução Principal Encontrada:
 
