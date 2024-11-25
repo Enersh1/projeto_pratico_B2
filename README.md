@@ -1,7 +1,47 @@
-# projeto_pratico_B2
-repositorio destinado a atividade do segundo bimestre de desenvolvimento web
+# Projeto Prático B2
 
-## 0) Função gerarNumerosMegaSena(quantidade)
+Repositorio destinado a atividade avaliativa do segundo bimestre da disciplina de desenvolvimento web
+Professor responsável: Otavio Lube
+Trabalho escrito por: Guilherme Campo Soares
+
+## Solução Principal Encontrada:
+
+```javascript
+function gerarNumerosAleatorios(quantidade) {
+    // Trabalhando manipulando os dados dentro de array
+    const vetorNumerosGerados = [];
+
+    let i = 0;
+    while (i < quantidade) {
+        const aleatorio = Math.floor(Math.random() * 60 + 1);
+
+        // Evitar duplicatas
+        if (vetorNumerosGerados.includes(aleatorio)) {
+            continue;
+        }
+
+        vetorNumerosGerados[i] = aleatorio;
+        i++;
+    }
+    
+    // Transformando o array em uma string concatenada, adicionando colchetes
+    const numerosComoString = vetorNumerosGerados.map(num => `${num}`).join(', ');
+
+    // Exibindo a string concatenada no console com contador da quantidade de números que serão gerados
+    console.log(`Números gerados: (${vetorNumerosGerados.length}): [${numerosComoString}]`);
+
+    // Retornando tanto a string concatenada, quanto o tamanho do array que é igual a quantidade de números na string.
+    return { string: numerosComoString, quantidade: vetorNumerosGerados.length };
+}
+
+function main(quantidade){
+    console.time("timer");
+    gerarNumerosAleatorios(quantidade);
+    console.timeEnd("timer")
+}
+```
+
+## 0) Função gerarNumerosAleatorios(quantidade)
 
 ### 1) Inicialização
 - 1.1) Cria um array vazio chamado `vetorNumerosGerados` que armazenará os números únicos;
