@@ -6,6 +6,7 @@ Professor responsável: Otavio Lube.
 O trabalho prático tem como objetivo a otimização de um código desenvolvido pelo professor, que gera números aleatórios.
 
 ## Código fornecido para ser otimizado:
+```javascript
 function gerarAleatorios(quantidade){
   var vetor = [];
   var geracoes = [];
@@ -29,6 +30,7 @@ function main(quantidade){
   gerarAleatorios(quantidade);
   console.timeEnd("timer");
 }
+```
 
 execução: `main(6)` quantidade padrão de números do jogos da Mega Sena.
 Foram feitas 10 execuções do código, com os seguintes valores de tempo de execução:
@@ -42,8 +44,9 @@ Foram feitas 10 execuções do código, com os seguintes valores de tempo de exe
 - 0.370849609375 ms Gerações: 6
 - 0.358154296875 ms Gerações: 7
 - 0.365966796875 ms Gerações: 6
-Média: 0.37646484375
-Desvio padrão: 0.0228430055427
+
+- Média: 0.37646484375
+- Desvio padrão: 0.0228430055427
 
 Execução: `main(60)` quantidade máxima possível.
 - 0.671875 ms Gerações: 181
@@ -56,10 +59,10 @@ Execução: `main(60)` quantidade máxima possível.
 - 0.632080078125 ms Gerações: 264
 - 0.618896484375 ms Gerações: 232
 - 0.64111328125 ms Gerações: 313
-Média: 0.673095703125
-Desvio padrão: 0.0622144853327
+- Média: 0.673095703125
+- Desvio padrão: 0.0622144853327
 
-## Solução Principal Encontrada:
+# Solução Principal Encontrada:
 
 ```javascript
 function gerarNumerosAleatorios(quantidade) {
@@ -94,6 +97,9 @@ function main(quantidade){
     gerarNumerosAleatorios(quantidade);
     console.timeEnd("timer")
 }
+
+/* função main ser executada pela primeira vez acaba levando mais tempo, então ela por padrão será executada uma vez (com argumento quantidade = 0 para que passe o mais rápidamente possível pelo código), durante a criação das funções, para que posteriormente os usos úteis possam aproveitar da máxima eficiência. */
+main(0);
 ```
 
 ## 0) Função gerarNumerosAleatorios(quantidade)
@@ -131,6 +137,40 @@ const numerosComoString = vetorNumerosGerados.map(num => `${num}`).join(', ');
 - 5.2) Retorna um objeto com:
   - `string`: números formatados como string
   - `quantidade`: total de números gerados
+
+Execução: `main(6)` quantidade padrão de números do jogos da Mega Sena.
+Foram feitas 10 execuções do código, com os seguintes valores de tempo de execução:
+- 0.208984375 ms Gerações: 6
+- 0.10302734375 ms Gerações: 6
+- 0.22802734375 ms Gerações: 6
+- 0.09399414062 ms Gerações: 6
+- 0.116943359375 ms Gerações: 6
+- 0.093994140625 ms Gerações: 6
+- 0.08984375 ms Gerações: 6
+- 0.092041015625 ms Gerações: 6
+- 0.0888671875 ms Gerações: 6
+- 0.10400390625 ms Gerações: 6
+
+- Média: 0.12158203125
+- Desvio padrão: 0.0493434718428
+
+Execução: `main(60)` quantidade máxima de números do jogos da Mega Sena.
+Foram feitas 10 execuções do código, com os seguintes valores de tempo de execução:
+- 0.208984375 ms Gerações: 6
+- 0.10302734375 ms Gerações: 6
+- 0.22802734375 ms Gerações: 6
+- 0.09399414062 ms Gerações: 6
+- 0.116943359375 ms Gerações: 6
+- 0.093994140625 ms Gerações: 6
+- 0.08984375 ms Gerações: 6
+- 0.092041015625 ms Gerações: 6
+- 0.0888671875 ms Gerações: 6
+- 0.10400390625 ms Gerações: 6
+
+- Média: 0.12158203125
+- Desvio padrão: 0.0493434718428
+
+## Calculo de diferença percentual no tempo de execução de ambos os códigos
 
 ## Conclusão
 Este código é uma implementação mais robusta em relação ao código apresentado pela sugestão do professor, pois:
