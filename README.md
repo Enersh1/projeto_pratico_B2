@@ -98,8 +98,10 @@ function main(quantidade){
     console.timeEnd("timer")
 }
 
-/* função main ser executada pela primeira vez acaba levando mais tempo, então ela por padrão será executada uma vez (com argumento quantidade = 0 para que passe o mais rápidamente possível pelo código), durante a criação das funções, para que posteriormente os usos úteis possam aproveitar da máxima eficiência. */
 main(0);
+/* função main ser executada pela primeira vez acaba levando mais tempo, 
+então ela por padrão será executada uma vez (com argumento quantidade = 0 para que passe o mais rápidamente possível pelo código), 
+durante a criação das funções, para que posteriormente os usos úteis possam aproveitar da máxima eficiência. */
 ```
 
 ## 0) Função gerarNumerosAleatorios(quantidade)
