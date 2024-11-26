@@ -158,16 +158,16 @@ Foram feitas 10 execuções do código, com os seguintes valores de tempo de exe
 
 Execução: `main(60)` quantidade máxima de números do jogos da Mega Sena.
 Foram feitas 10 execuções do código, com os seguintes valores de tempo de execução:
-- 0.21484375 ms Gerações: 6
-- 0.14599609375 ms Gerações: 6
-- 0.14404296875 ms Gerações: 6
-- 0.14892578125 ms Gerações: 6
-- 0.135009765625 ms Gerações: 6
-- 0.158935546875 ms Gerações: 6
-- 0.22900390625 ms Gerações: 6
-- 0.137939453125 ms Gerações: 6
-- 0.1728515625 ms Gerações: 6
-- 0.153076171875 ms Gerações: 6
+- 0.21484375 ms Gerações: 60
+- 0.14599609375 ms Gerações: 60
+- 0.14404296875 ms Gerações: 60
+- 0.14892578125 ms Gerações: 60
+- 0.135009765625 ms Gerações: 60
+- 0.158935546875 ms Gerações: 60
+- 0.22900390625 ms Gerações: 60
+- 0.137939453125 ms Gerações: 60
+- 0.1728515625 ms Gerações: 60
+- 0.153076171875 ms Gerações: 60
 
 - Média: 0.1640625 ms
 - Desvio padrão: 0.0308271408736 ms
